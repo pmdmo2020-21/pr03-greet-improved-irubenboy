@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
     android:padding="@dimen/main_padding">
 
     <androidx.appcompat.widget.SwitchCompat
@@ -34,6 +33,14 @@
         />
 
     <TextView
+        android:id="@+id/charName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@plurals/count_char_name"
+        android:layout_gravity="end"
+        />
+
+    <TextView
         android:id="@+id/txtSurname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,6 +54,15 @@
         android:inputType="textPersonName"
         android:ems="@integer/maxLength"
         android:maxLength="@integer/maxLength"
+        android:imeOptions="actionDone"
+        />
+
+    <TextView
+        android:id="@+id/charSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@plurals/count_char_surname"
+        android:layout_gravity="end"
         />
 
     <TextView

@@ -13,4 +13,14 @@
     <string name="txtPoliteGreet"> Good Morning %1$s. Pleased to meet you.</string>
     <string name="txtUnpoliteGreet">Hello %1$s. What\'s up</string>
     <string name="noPremiun">Buy Premium subscription to go on greeting!</string>
+    <string name="required">Required!</string>
+    <plurals name="count_char_surname">
+        <item quantity="one">%1$d char</item>
+        <item quantity="other">%1$d chars</item>
+    </plurals>
+    <plurals name="count_char_name">
+        <item quantity="one">%1$d char</item>
+     <item quantity="other">%1$d chars</item>
+    </plurals>
+
 </resources>
