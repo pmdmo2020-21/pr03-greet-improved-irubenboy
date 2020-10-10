@@ -1,10 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/llRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="@dimen/main_padding">
 
-    <!-- TODO -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swtPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swtPremium"
+        android:layout_gravity="end"
+        />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtName"
+        />
+
+
+    <EditText
+        android:id="@+id/txtInputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="@integer/maxLength"
+        android:maxLength="@integer/maxLength"
+        />
+
+    <TextView
+        android:id="@+id/txtSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSurname"
+        />
+
+    <EditText
+        android:id="@+id/txtInputSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="@integer/maxLength"
+        android:maxLength="@integer/maxLength"
+        />
+
+    <TextView
+        android:id="@+id/txtTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTreatment"
+        />
+
+    <RadioGroup
+        android:id="@+id/rdgTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mr"/>
+
+        <RadioButton
+            android:id="@+id/rbdMr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbMr"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rdbMrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbMrs"/>
+
+        <RadioButton
+            android:id="@+id/rdbMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbMs"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkPolitely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chkPolitely"
+        android:layout_marginTop="@dimen/ckkMargin"/>
+
+    <Button
+        android:id="@+id/btnGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnGreet"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/pgbCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="@integer/pgbMax"
+        android:progress="@integer/pgbProgress"
+        android:indeterminate="false">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/txtGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtGreetSize"
+        android:textStyle="bold"
+        />
+
+
 
 </LinearLayout>

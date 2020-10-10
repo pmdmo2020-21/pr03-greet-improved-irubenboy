@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Greet Improved</string>
+    <string name="app_name">Greet</string>
+    <string name="swtPremium">Premium</string>
+    <string name="txtName">Name</string>
+    <string name="txtSurname">Surname</string>
+    <string name="txtTreatment">Treatment</string>
+    <string name="rdbMrs">Mrs.</string>
+    <string name="rdbMr">Mr.</string>
+    <string name="rdbMs">Ms.</string>
+    <string name="chkPolitely">Politely</string>
+    <string name="btnGreet">Greet</string>
+    <string name="pgbCounting">%1$d of 10</string>
+    <string name="txtPoliteGreet"> Good Morning %1$s. Pleased to meet you.</string>
+    <string name="txtUnpoliteGreet">Hello %1$s. What\'s up</string>
+    <string name="noPremiun">Buy Premium subscription to go on greeting!</string>
 </resources>

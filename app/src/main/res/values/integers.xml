@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <integer name="maxLength">100</integer>
+    <integer name="pgbMax">10</integer>
+    <integer name="pgbProgress">0</integer>
 </resources>
